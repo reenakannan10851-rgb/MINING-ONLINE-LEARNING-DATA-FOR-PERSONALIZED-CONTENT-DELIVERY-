@@ -5,7 +5,7 @@ import EDAPage from './pages/EDAPage';
 import ModelingPage from './pages/ModelingPage';
 import ClusteringPage from './pages/ClusteringPage';
 import RecommendationsPage from './pages/RecommendationsPage';
-import { DataIcon, ChartIcon, ModelIcon, ClusterIcon, RecommendIcon, GithubIcon } from './components/icons';
+import { DataIcon, ChartIcon, ModelIcon, ClusterIcon, RecommendIcon } from './components/icons';
 
 type Page = 'upload' | 'eda' | 'modeling' | 'clustering' | 'recommendations';
 
@@ -50,9 +50,6 @@ const App: React.FC = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <h1 className="text-2xl font-bold text-gray-800">OULAD Analytics</h1>
-            <a href="https://github.com/google/generative-ai-docs" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-gray-800">
-              <GithubIcon />
-            </a>
           </div>
           <nav className="flex space-x-2 sm:space-x-4 pb-3 overflow-x-auto">
             <NavItem page="upload" label="Data" icon={<DataIcon />} />
